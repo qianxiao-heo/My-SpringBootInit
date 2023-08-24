@@ -31,11 +31,11 @@ mybatis-plus:
 cos:
   tencent:
     # secretId和secretKey(参见 https://console.cloud.tencent.com/cam/capi)
-    secretId: AKIDhCRQ8ZkfIeiX4KIzQZR1LOAfurXw3uUn
-    secretKey: 2oJXT9XfV4NO8bokPnvlKbhWu1rRjkUy
+    secretId: AKxxxxxxx
+    secretKey: 2oxxxxxxxx
     # COS地域的简称请参见 https://www.qcloud.com/document/product/436/6224
     region: ap-chengdu
     # 存储桶 bucket(命名格式为 BucketName-APPID,参见 https://console.cloud.tencent.com/cos/bucket)
-    bucket: yanyu-1310500323
+    bucket: xxxxxxx
     # 存储类型(默认是标准(Standard), 低频(standard_ia);参见 https://cloud.tencent.com/document/product/436/33417)
     standard: Standard_IA
