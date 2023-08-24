@@ -1,0 +1,29 @@
+{
+  "properties": [
+    {
+      "name": "cos.tencent.secretId",
+      "type": "java.lang.String",
+      "description": "Description for cos.client.accessKey."
+    },
+    {
+      "name": "cos.tencent.secretKey",
+      "type": "java.lang.String",
+      "description": "Description for cos.client.secretKey."
+    },
+    {
+      "name": "cos.tencent.region",
+      "type": "java.lang.String",
+      "description": "Description for cos.client.region."
+    },
+    {
+      "name": "cos.tencent.bucket",
+      "type": "java.lang.String",
+      "description": "Description for cos.client.bucket."
+    },
+    {
+      "name": "cos.tencent.standard",
+      "type": "java.lang.String",
+      "description": "Description for cos.tencent.standard."
+    }
+  ]
+}

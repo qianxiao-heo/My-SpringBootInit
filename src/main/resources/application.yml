@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: user-center
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/my_db
+    username: root
+    password: 123456
+  session:
+    timeout: 86400
+  # 开启 swagger3
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false #阻止将驼峰命名改变为下划线的方式
+  global-config:
+    db-config:
+      logic-delete-field: isDelete # 全局逻辑删除的实体字段名
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+
+# 对象储存
+cos:
+  tencent:
+    # secretId和secretKey(参见 https://console.cloud.tencent.com/cam/capi)
+    secretId: AKIDhCRQ8ZkfIeiX4KIzQZR1LOAfurXw3uUn
+    secretKey: 2oJXT9XfV4NO8bokPnvlKbhWu1rRjkUy
+    # COS地域的简称请参见 https://www.qcloud.com/document/product/436/6224
+    region: ap-chengdu
+    # 存储桶 bucket(命名格式为 BucketName-APPID,参见 https://console.cloud.tencent.com/cos/bucket)
+    bucket: yanyu-1310500323
+    # 存储类型(默认是标准(Standard), 低频(standard_ia);参见 https://cloud.tencent.com/document/product/436/33417)
+    standard: Standard_IA
